@@ -1,0 +1,186 @@
+license checkout error: (AP) feature checkout was disable
+<0229:13:05:20:WARNING:LargeDftVia> Large default via: metal4 up   using 3 tracks : M4M5_PR_via_rule_1
+{0229:13:05:20}     0%: Compute Pin Lead
+{0229:13:05:20}   100%: Compute Pin Lead
+{0229:13:05:20:Compute Placement Params}        Elapsed = 00:00:00; CPU = 00:00:00; VM = 1118.3M
+Process-RSS =  241.6M (21.6%), System-Free = 12881.9M
+
+****************************************
+Report : placement
+Design : top
+Version: 19.1.rel.1
+Date   : Sat Feb 29 13:05:20 2020
+****************************************
+
+half-perimeter wire length
+--------------------------
+  total      = 159396.125 um (half-perimeter)
+  horizontal = 92301.785 um (half-perimeter)
+  vertical   = 67094.340 um (half-perimeter)
+  average    = 99.810 um (half-perimeter)
+  1597 flattened nets
+
+Steiner tree wire length
+------------------------
+  total      = 172928.745 um (steiner-tree)
+  horizontal = 97499.995 um (steiner-tree)
+  vertical   = 75428.750 um (steiner-tree)
+  average    = 108.283 um (steiner-tree)
+  1597 flattened nets
+
+area information
+----------------
+  die area                     =     810000 (um^2) (X)
+  core area                    =     774400 (um^2) (A)
+  available row area           =     500535 (um^2) (B)
+  total cell area              =     283891 (um^2) (C)
+    std cell area              =      33859 (um^2) (D)
+      inv cell area            =        645 (um^2)
+      buf cell area            =      11457 (um^2)
+      other combo cell area    =       9921 (um^2)
+      sequential cell area     =      11837 (um^2)
+        flip-flop cell area    =      11837 (um^2)
+        latch cell area        =          0 (um^2)
+        ICG cell area          =          0 (um^2)
+    filler cell area           =       5439 (um^2) (E)
+      tap_filler cell area     =       4599 (um^2)
+      endcap_filler cell area  =        841 (um^2)
+    macro cell area            =     244592 (um^2) (F)
+    pad cell area              =          0 (um^2) (G)
+  placeable cell area          =      33859 (um^2) (H)
+  available row area excluding soft place-guides                   =     500535 (um^2) (I)
+  placeable cell area excluding soft place-guides                  =      33859 (um^2) (J)
+
+utilization
+-----------
+  die utilization                          =  35.05 % ; C / X
+  die utilization excluding filler cells   =  34.38 % ; (C - E) / X
+  core utilization                         =  36.66 % ; C / A
+  core utilization excluding filler cells  =  35.96 % ; (C - E) / A
+  std-cell utilization                     =   6.39 % ; D / (A - F - G)
+  placeable-cell utilization               =   6.76 % ; H / B
+  placeable-cell utilization excluding soft place-guides                  =   6.76 % ; J / I
+
+leaf instances
+--------------
+  # total            = 4868
+  # std cells        = 1461
+  # macro cells      = 4
+  # filler cells     = 3403
+    # tap_filler     = 2877
+    # endcap_filler  = 526
+  # placed cells     = 1464
+  # aprx_fixed cells = 1
+  # zero-conn cells  = 2
+  # one-conn cells   = 12
+  # floating cells   = 2
+  # double-height std cells = 30
+  # level shifter cells = 52
+  # buffer cells     = 647
+  # inverter cells   = 109
+  # sequential cells = 238
+  # flip-flop cells  = 238
+  total gate count   = 58068
+  # on site [unit] = 803
+  # on site [unithv] = 658
+  average signal pins per std cell = 3.150
+
+flatten nets
+------------
+  # total            = 1648
+  # signal nets      = 1597
+  # clock nets       = 41
+  # ground nets      = 2
+  # power nets       = 8
+  average pins per flatten signal net = 2.860
+
+region # 1 
+------------
+  source      = cell_bndy of module top
+  soft        = false
+  exclusive   = true
+  power_domain = default
+  # fixed instances        = 1770
+  # instances on site [unit] = 129
+  utilization of site [unit] = 1.191 %
+
+region # 2 
+------------
+  source      = place_group HV_PD
+  soft        = false
+  exclusive   = true
+  power_domain = HV_PD
+  # fixed instances        = 3
+  # instances on site [unithv] = 658
+  utilization of site [unithv] = 22.010 %
+
+region # 3 
+------------
+  source      = place_group DPSLP
+  soft        = false
+  exclusive   = true
+  power_domain = DPSLP
+  # fixed instances        = 626
+  # instances on site [unit] = 198
+  utilization of site [unit] = 5.725 %
+
+region # 4 
+------------
+  source      = place_group VCCD_sw
+  soft        = false
+  exclusive   = true
+  power_domain = VCCD_sw
+  # fixed instances        = 412
+  # instances on site [unit] = 235
+  utilization of site [unit] = 9.982 %
+
+region # 5 
+------------
+  source      = place_group HIB
+  soft        = false
+  exclusive   = true
+  power_domain = HIB
+  # fixed instances        = 596
+  # instances on site [unit] = 241
+  utilization of site [unit] = 7.122 %
+
+lib_cell
+--------
+  # lib cell              = 594
+  # no-phys lib cell      = 17
+  # rectilinear lib cell  = 0
+  # MH std lib cell       = 27
+  # high-pin std lib cell = 0
+  max shape mask num      = 2
+    lib-cell shape on metal 2
+
+---------------------------------------------------------------------------------
+                                              M1/V1    M2/V2 
+                       short :        10  (       7        3 )
+                                                  0        0 
+                 min_spacing :         5  (       3        2 )
+                                                  0        0 
+                     antenna :         1  (       1        0 )
+                                                  0        0 
+            Total violations :        16  (      11        5 )
+                                                  0        0 
+---------------------------------------------------------------------------------
+
+license checkout error: (AP) feature checkout was disable
+license checkout error: (AP) feature checkout was disable
+  scenario (          - ):  WNS[  -9.480 : -17.252 ]  TNS[   -26.425 : -2420.763 ]  GroupCost[     9.480 :    34.126 ]  DRV[ 990.78 :   40.10 :    0.00 ]  Leakage Power[  2911.418 ]
+  scenario (          - ):  RRWNS[  -9.480 :       - ]  RRTNS[   -25.463 :     0.000 ]  RRFEP[     4 :     0 ]  DomiPinsRatio[  0.000% :  0.000% ]
+  scenario (          - ):  CGWNS[       - :       - ]  CGTNS[     0.000 :     0.000 ]  CGFEP[     0 :     0 ]
+{0229:13:10:20:Update Timing : 2   }(1.000) Elapsed = 00:00:00; CPU = 00:00:00; VM = 1163.6M
+Process-RSS =  290.5M (25.0%), System-Free = 12835.1M
+[ PhysMem(free/total): 12835/15818M ] [ load average: 11.01, 10.83, 9.36 ]
+{0229:13:10:20:MaxLeakagePower} Max leakage power constraint is assumed to be 0. Use command 'set_max_leakage_power <value>' to override it.
+
+                       Path                 Total         Design Rule Violation
+                      Group      Worst   Negative      ---------------------------    Leakage              Instance
+                       Cost      Slack      Slack      Trans        Cap     Fanout      Power       Area      Count
+-------------------------------------------------------------------------------------------------------------------
+Max                   9.480     -9.480    -26.425    990.779     40.104      0.000  2.911e-03  33859.085       1461
+Min                  34.126    -17.252  -2420.763      0.000      0.000      0.000                                 
+
+
