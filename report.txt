@@ -1,7 +1,4 @@
-license checkout error: (AP) feature checkout was disable
-<0229:13:05:20:WARNING:LargeDftVia> Large default via: metal4 up   using 3 tracks : M4M5_PR_via_rule_1
-{0229:13:05:20}     0%: Compute Pin Lead
-{0229:13:05:20}   100%: Compute Pin Lead
+
 {0229:13:05:20:Compute Placement Params}        Elapsed = 00:00:00; CPU = 00:00:00; VM = 1118.3M
 Process-RSS =  241.6M (21.6%), System-Free = 12881.9M
 
@@ -166,8 +163,6 @@ lib_cell
                                                   0        0 
 ---------------------------------------------------------------------------------
 
-license checkout error: (AP) feature checkout was disable
-license checkout error: (AP) feature checkout was disable
   scenario (          - ):  WNS[  -9.480 : -17.252 ]  TNS[   -26.425 : -2420.763 ]  GroupCost[     9.480 :    34.126 ]  DRV[ 990.78 :   40.10 :    0.00 ]  Leakage Power[  2911.418 ]
   scenario (          - ):  RRWNS[  -9.480 :       - ]  RRTNS[   -25.463 :     0.000 ]  RRFEP[     4 :     0 ]  DomiPinsRatio[  0.000% :  0.000% ]
   scenario (          - ):  CGWNS[       - :       - ]  CGTNS[     0.000 :     0.000 ]  CGFEP[     0 :     0 ]
